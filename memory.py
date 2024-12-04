@@ -20,14 +20,14 @@ def memory_game():
     BLACK = (244, 255, 248)
     GREY = (11, 79, 108)
     colors = [
-        (255, 182, 193),  # Light Pink
-        (173, 216, 230),  # Light Blue
-        (152, 251, 152),  # Light Green
-        (255, 239, 213),  # Papaya Whip
-        (255, 228, 181),  # Moccasin
-        (216, 191, 216),  # Thistle
-        (240, 230, 140),  # Khaki
-        (250, 235, 215)   # Antique White
+        (255, 99, 71), # Tomato
+        (255, 69, 0), # Orange Red
+        (255, 140, 0), # Dark Orange
+        (255, 215, 0), # Gold
+        (124, 252, 0), # Lawn Green
+        (0, 255, 127), # Spring Green
+        (0, 191, 255), # Deep Sky Blue
+        (30, 144, 255) # Dodger Blue
     ]
 
     # Formas para las cartas
