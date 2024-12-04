@@ -94,12 +94,8 @@ def visualize_paths(maze, path_fast, path_slow, start, goal):
         current_step_slow = path_slow[:step + 1] if step < len(path_slow) else path_slow
         draw_maze(current_step_fast, current_step_slow)
         pygame.time.wait(500)  # Esperar 500 ms entre pasos
-
-    while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
+    return
+            
 
 # Example usage:
 # visualize_paths(your_maze, your_fast_path, your_slow_path, start_coordinates, goal_coordinates)
@@ -131,7 +127,3 @@ def maze_game():
         visualize_paths(maze, path_fast, path_slow, start, goal)
     else:
         print("No se encontro un camino.")
-
-# Ejecutar la función principal solo si se llama directamente
-if __name__ == "__main__":
-    maze_game()
