@@ -5,6 +5,7 @@ import random
 import subprocess
 
 
+
 def memory_game():
     # Inicialización de pygame
     pygame.init()
@@ -188,19 +189,15 @@ def memory_game():
         while waiting_for_input:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    return
                 elif event.type == pygame.MOUSEBUTTONDOWN:
                     for btn_rect, btn_action in buttons:
                         if btn_rect.collidepoint(event.pos):
                             if btn_action:
                                 waiting_for_input = False
                             else:
-                                subprocess.Run(["python", "Menu.py"])
-                                pygame.quit()
-                                sys.exit()
+                                return
                                 
                                 
 
-if __name__ == "__main__":
-    memory_game()
+
